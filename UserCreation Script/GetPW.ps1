@@ -19,7 +19,7 @@ function Get-PasswordStateEntries {
         $uri = "https://spdb.npr.ams.nz:9119/api/passwords/1444/?Title=$encodedTitle&QueryAll&PreventAuditing=true"
     }
 
-    $apikey = "2343eda6c8f75b9b58a637cedf943243"
+    $apikey = "NotTheApiKey"
 
     try {
         $result = Invoke-RestMethod -Method Get -Uri $uri -Headers @{ "APIKey" = $apikey }
